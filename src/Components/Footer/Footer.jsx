@@ -5,7 +5,7 @@ export default function Footer() {
     // Footer Tags
     <>
       <div className="container-fluid mb-0 bb  text-white">
-        <div className="d-md-flex  justify-content-center gap-5  p-5 ms-5 ">
+        <div className="d-md-flex  justify-content-center gap-5  p-5  ">
           <div className=" text-center mt-md-0 ">
             <h3>Location</h3>
             <p>2215 John Daniel Drive</p>

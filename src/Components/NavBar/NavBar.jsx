@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
 
-
 function NavBar() {
   return (
     // Nav Bar Tags
@@ -17,42 +16,38 @@ function NavBar() {
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <ul className="ms-auto d-flex gap-3 fs-5 list-unstyled  ">
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  "nav-link text-white fw-bold text-uppercase text-decoration-none " +
-                  (isActive ? "active bg-success text-white rounded p-2 " : "")
-                }
-                // className="text-white fw-bold text-uppercase text-decoration-none"
-                to="About"
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  "nav-link text-white fw-bold text-uppercase text-decoration-none " +
-                  (isActive ? "active bg-success text-white rounded p-2 " : "")
-                }
-                to="Protfolio"
-              >
-                Protfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  "nav-link text-white fw-bold text-uppercase text-decoration-none " +
-                  (isActive ? "active bg-success text-white rounded p-2 " : "")
-                }
-                to="Contact"
-              >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
+          <Nav className="ms-auto d-flex gap-3 fs-5 list-unstyled  ">
+            <NavLink
+              className={({ isActive }) =>
+                "nav-link text-white fw-bold text-uppercase text-decoration-none " +
+                (isActive ? "active bg-success text-white rounded p-2 " : "")
+              }
+              // className="text-white fw-bold text-uppercase text-decoration-none"
+              to="About"
+            >
+              About
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-link text-white fw-bold text-uppercase text-decoration-none " +
+                (isActive ? "active bg-success text-white rounded p-2 " : "")
+              }
+              to="Protfolio"
+            >
+              Protfolio
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-link text-white fw-bold text-uppercase text-decoration-none " +
+                (isActive ? "active bg-success text-white rounded p-2 " : "")
+              }
+              to="Contact"
+            >
+              Contact
+            </NavLink>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
