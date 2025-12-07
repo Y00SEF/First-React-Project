@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bb {
+  background-color: #2c3e50;
+}
+
+.line {
+  width: 120px;
+  height: 4px;
+  background: black;
+  border-radius: 5px;
+}
+.ww {
+  height: 600px;
+}
+.hh {
+  font-size: 80px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.inner:hover .item {
+  visibility: visible;
+}
+.ll {
+  font-size: 150px;
+}
+
+.form-control {
+  border: none !important;
+  border-bottom: 1px solid gray !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+.cc {
+  margin-top: 90px;
+}
