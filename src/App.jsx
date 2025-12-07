@@ -11,7 +11,7 @@ import Protfolio from "./Components/Protfolio/Protfolio.jsx";
 
 let x = createBrowserRouter([
   {
-    path: "",
+    path: "/",
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
