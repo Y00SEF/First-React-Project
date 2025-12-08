@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     // Contact Page Tags
 
-    <div className="container-md cc p-4 mt-5 mt-md-0  ww">
+    <div className="container-md contact-Section p-4    ww">
       <div>
         <h1 className="text-center  fw-bold ">Contact Section</h1>
 
