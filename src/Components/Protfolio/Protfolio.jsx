@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-export default function Protfolio() {
+export default function Protfolio({test}) {
   // Virabels And Function To Active Dialog
   const [show, setShow] = useState(false);
   const [modalImg, setModalImg] = useState("");
@@ -33,7 +33,7 @@ export default function Protfolio() {
     <div>
       <div className="container cc pt-5 ">
         <div className="d-flex flex-column justify-content-center align-items-center">
-          <h1 className="text-center fw-bold">Start Framework</h1>
+          <h1 className="text-center text-uppercase fw-bold">{test}</h1>
 
           <div className="d-flex justify-content-center align-items-center gap-4">
             <div className="line"></div>

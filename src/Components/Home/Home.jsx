@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function Home() {
+export default function Home({ test }) {
   // To Write Title page
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function Home() {
         className="w-25"
       />
       <div>
-        <h1 className="text-center text-white fw-bold ">Start Framework</h1>
+        <h1 className="text-center text-white fw-bold ">{test}</h1>
 
         <div className="d-flex justify-content-center align-items-center gap-4">
           <div className="line"></div>

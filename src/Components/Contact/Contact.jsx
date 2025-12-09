@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-export default function Contact() {
+export default function Contact({ test }) {
   // To Write Title page
 
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function Contact() {
 
     <div className="container-md contact-Section p-4    ww">
       <div>
-        <h1 className="text-center  fw-bold ">Contact Section</h1>
+        <h1 className="text-center  fw-bold ">{test}</h1>
 
         <div className="d-flex justify-content-center align-items-center gap-4">
           <div class="line"></div>

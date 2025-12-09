@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-export default function About() {
+export default function About({ test }) {
+
   // To Write Title page
 
   useEffect(() => {
@@ -11,7 +12,9 @@ export default function About() {
 
     <div className="container-fluid cc ww bg-success p-5 gap-5 d-flex flex-column justify-content-center align-items-center">
       <div>
-        <h1 className="text-center  text-white fw-bold ">Start Framework</h1>
+        <h1 className="text-center text-uppercase  text-white fw-bold ">
+          {test}
+        </h1>
 
         <div className="d-flex justify-content-center align-items-center gap-4">
           <div className="line"></div>

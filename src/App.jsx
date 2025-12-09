@@ -8,17 +8,17 @@ import NotFound from "./Components/NotFound/NotFound.jsx";
 import Layout from "./Components/Layout/Layout.jsx";
 import About from "./Components/About/About.jsx";
 import Protfolio from "./Components/Protfolio/Protfolio.jsx";
+import Heading from "./Components/Heading/Heading.jsx";
 
 let x = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
     children: [
-      { index: true, element: <Home /> },
-
-      { path: "About", element: <About /> },
-      { path: "Protfolio", element: <Protfolio /> },
-      { path: "Contact", element: <Contact /> },
+      { index: true, element: <Heading page="home" /> },
+      { path: "About", element: <Heading page="about" /> },
+      { path: "Protfolio", element: <Heading page="portfolio" /> },
+      { path: "Contact", element: <Heading page="contact" /> },
       { path: "*", element: <NotFound /> },
     ],
   },
